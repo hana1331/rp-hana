@@ -70,16 +70,23 @@ Prirejeno po:
    stolpca ali vsa števila v katerikoli od glavnih diagonal.
 \end{definicija}
 
-Primer magičnega kvadrata reda 3 je prikazan v tabeli ??. % sklic: table:mag3
-
+Primer magičnega kvadrata reda 3 je prikazan v tabeli \ref{table:mag3}.
+\begin{table}[!ht]
+   \centering
+\label{table:mag3} 
+\caption{Magični kvadrat reda 3}
 % - napis nad tabelo: Magični kvadrat reda 3
 % - oznaka: table:mag3
 % Začetek magičnega kvadrata
-%   8 & 1 & 6 \\\hline
-%   3 & 5 & 7 \\\hline
-%   4 & 9 & 2 \\\hline
+\large
+\begin{tabular}{|c|c|c|}\hline
+   8 & 1 & 6 \\\hline
+   3 & 5 & 7 \\\hline
+   4 & 9 & 2 \\\hline
+\end{tabular}
+\normalsize
 % Konec magičnega kvadrata
-
+\end{table}
 \begin{definicija}
    Magični kvadrat reda \(n\) je \emph{normalen}, če v njem nastopajo števila
    \begin{equation}
@@ -201,19 +208,25 @@ Preprost račun pokaže, da je konstanti ?? analogna konstanta
       iz drugega s pomočjo zasukov oziroma zrcaljenj.
 \end{definicija}
 
-Števila različnih normalnih magičnih kvadratov se nahajajo v tabeli ??.
+Števila različnih normalnih magičnih kvadratov se nahajajo v tabeli~\ref{table:stevila}.
+\begin{table}[!ht]
+   \centering
 % sklic: table:stevila
-
-% - napis nad tabelo: Število različnih normalnih magičnih kvadratov
+\caption{Število različnih normalnih magičnih kvadratov}
+\label{table:stevila}
 % - oznaka: table:stevila
 % Začetek tabele
-      točna vrednost približek
-      red 1 2 3 4 5 6
+\begin{tabular}{lcccccc}\toprule
+   \multicolumn{5}{c}{točna vrednost} & približek\\
+   \midrule
+      red & 1 & 2 & 3 & 4 & 5 & 6\\
       % Decimalno vejico v matematičnem načinu zapišite kot {,},
       % sicer jo LaTeX izpiše kot ločilo, s presledkom za njo.
-      število kvadratov 1 0 1 880 275305224 !!
+      število kvadratov & 1 & 0 & 1 & 880 & 275305224 & !! \\
+      \bottomrule
+\end{tabular}
 % Konec tabele
-
+\end{table}
 Vse normalne magične kvadrate reda 4 je oštevilčil Frénicle de Bessy
 leta 1693, glej~\cite{bessy}, in jih je moč najti v knjigi~\cite{berlekamp}
 iz leta 1982. Število normalnih kvadratov reda 5 je izračunal
