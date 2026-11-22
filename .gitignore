@@ -6,3 +6,11 @@
 *.synctex.gz
 *.toc
 *.pdf
+*.bbl
+*.blg
+*.idx
+*.ilg
+*.ind
+*.out
+*.snm
+*.toc
